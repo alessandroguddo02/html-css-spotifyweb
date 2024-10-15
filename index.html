@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>spotify</title>
 </head>
+
 <body>
-    
+
     <div class="wrapper d-flex direction">
         <div class="upper-content d-flex debug">
             <div id="sidebar" class="debug">
-                
+
             </div>
             <main class="debug">
-                <div class="header debug"></div>
-                
+                <div class="header j-end a-center d-flex debug">
+                    <a class="" href="#">effettua l'upgrade</a>
+                </div>
+
                 <nav class="debug">
                     <ul class="d-flex j-center p-10">
                         <li><a href="#">in evidenza</a></li>
@@ -27,37 +35,42 @@
                     </ul>
                 </nav>
 
-                <div class="row d-flex debug">
-                   
+                <div>
+                    <h1>recently played</h1>
+                </div>
+
+                <div class="row d-flex wrap debug">
+
                     <!--card1-->
                     <div class="col debug">
-                        <div class="card d-flex debug">
+                        <div class="card debug">
                             <img src="./img/metal_lifting.jpg" alt="heavy-metal">
                         </div>
                         <div class="under-image">
-                            <h2>heavy metal</h2>
-                            <p>subtitle</p>
-                        </div>
-                    </div>   
-
-                         <!--card2-->
-                     <div class="col debug">
-                        <div class="card debug">
-                            <img src="./img/stranger.jpeg" alt="heavy-metal">
-                        </div>
-                        <div class="under-image">
-                            <h2>heavy metal</h2>
+                            <h3>heavy metal</h3>
                             <p>subtitle</p>
                         </div>
                     </div>
-                        <!--card3-->
 
+                    <!--card2-->
                     <div class="col debug">
                         <div class="card debug">
                             <img src="./img/stranger.jpeg" alt="heavy-metal">
                         </div>
                         <div class="under-image">
-                            <h2>heavy metal</h2>
+                            <h3>heavy metal</h3>
+                            <p>subtitle</p>
+                        </div>
+                    </div>
+
+                    <!--card3-->
+
+                    <div class="col debug">
+                        <div class="card debug">
+                            <img src="./img/aquietplace.jpeg" alt="heavy-metal">
+                        </div>
+                        <div class="under-image">
+                            <h3>a quiet place</h3>
                             <p>subtitle</p>
                         </div>
                     </div>
@@ -65,10 +78,10 @@
                     <!--card4-->
                     <div class="col debug">
                         <div class="card debug">
-                            <img src="./img/stranger.jpeg" alt="heavy-metal">
+                            <img src="./img/split.jpeg" alt="heavy-metal">
                         </div>
                         <div class="under-image">
-                            <h2>heavy metal</h2>
+                            <h3>split</h3>
                             <p>subtitle</p>
                         </div>
                     </div>
@@ -76,10 +89,10 @@
                     <!--card5-->
                     <div class="col debug">
                         <div class="card debug">
-                            <img src="./img/stranger.jpeg" alt="heavy-metal">
+                            <img src="./img/cure.jpeg" alt="heavy-metal">
                         </div>
                         <div class="under-image">
-                            <h2>heavy metal</h2>
+                            <h3>a cure for wellness</h3>
                             <p>subtitle</p>
                         </div>
                     </div>
@@ -87,25 +100,84 @@
                     <!--card6-->
                     <div class="col debug">
                         <div class="card debug">
-                            <img src="./img/stranger.jpeg" alt="heavy-metal">
+                            <img src="./img/sinister.jpeg" alt="heavy-metal">
                         </div>
                         <div class="under-image">
-                            <h2>heavy metal</h2>
+                            <h3>sinister</h3>
                             <p>subtitle</p>
                         </div>
                     </div>
-
-                    
-
                 </div>
-                
-                
+
+
+                <div>
+                    <h2>john dohe</h2>
+                    <p>più ascolti, più accurati saranno i suggerimenti</p>
+                </div>
+
+                <!--row-2-->
+                <!--card1-->
+
+                <div class="row d-flex debug">
+                    <div class="col debug">
+                        <div class="card debug">
+                            <img src="./img/radar.jpeg" alt="heavy-metal">
+                        </div>
+                        <div class="under-image">
+                            <h3>release radar</h3>
+                        </div>
+                    </div>
+
+                    <!--card2-->
+                    <div class="col debug">
+                        <div class="card debug">
+                            <img src="./img/mixdaily.jpeg" alt="heavy-metal">
+                        </div>
+                        <div class="under-image">
+                            <h3>daily mix 1</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--row-3-->
+                <!--card1-->
+
+
+                <div>
+                    <h2>artisti più popolari</h2>
+                    <p>più ascolti, più accurati saranno i suggerimenti</p>
+                </div>
+
+                <div class="row d-flex debug">
+                    <div class="col debug">
+                        <div class="card box debug">
+                            <img src="./img/youg.jpeg" alt="heavy-metal">
+                        </div>
+                        <div class="under-image">
+                            <h3>lana del rey</h3>
+                        </div>
+                    </div>
+
+                    <!--card2-->
+                    <div class="col debug">
+                        <div class="card box debug">
+                            <img src="./img/einaudi.jpeg" alt="heavy-metal">
+                        </div>
+                        <div class="under-image">
+                            <h3>ludovico einaudi</h3>
+                        </div>
+                    </div>
+                </div>
+
+
 
             </main>
 
         </div>
         <footer class="debug"></footer>
     </div>
-    
+
 </body>
+
 </html>
