@@ -1,0 +1,117 @@
+:root {
+    --color-dark: #141922;
+    --color-darkgrey: #282828;
+    --color-light: #ffffff;
+    --color-black: #000000;
+    --color-lightgrey: #c1c1c1;
+    --color-highlight: #9ae22d;
+    --color-redcolor: #ca1717;
+  }
+
+  /*reset*/
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  /*general*/
+  .header{
+    height: 70px;
+    position: sticky;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+
+  .wrapper{
+    height: 100vh;
+  }
+
+  .upper-content{
+    background-color: var(--color-dark);
+    flex: 1 1 auto; /*grow-shrink-width*/
+    min-height: 0;
+  }
+
+  footer{
+    background-color: var(--color-darkgrey);
+    flex: 0 0 100px; /*grow-shrink-height*/
+  }
+
+  main{
+    flex: 1 1 auto; /*grow-shrink-width*/
+    color: white;
+  }
+
+  #sidebar{
+    background-color: var(--color-black);
+    flex: 0 0 230px; /*grow-shrink-width*/
+  }
+
+  nav ul{
+    list-style: none;
+  }
+
+  /*main*/
+  nav ul li a{
+    color: var(--color-light);
+    text-decoration: none;
+  }
+
+  nav ul li a:hover{
+    border-bottom: 3px solid orangered;
+    width: 50%;
+  }
+
+  nav ul li {
+    padding: 10px;
+  }
+
+
+  .card{
+    width: calc(100% / 6);
+  }
+  
+  .card img{
+    width: 100%;
+  }
+
+  .under-image{
+    text-align: center;
+  }
+
+  .card .hover-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  
+
+
+
+
+
+  /*flex-utility*/
+  .d-flex{
+    display: flex;
+  }
+
+  .direction{
+    flex-direction: column;
+  }
+
+  .j-center{
+    justify-content: center;
+  }
+
+
+  /*debug*/
+  .debug{
+    border: 1px solid red;
+  }
+
+
+  /*space*/
+  
