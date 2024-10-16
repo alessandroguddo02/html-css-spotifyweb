@@ -142,6 +142,7 @@ p {
     flex-direction: column;
     flex: 0 0 230px;
     color: var(--color-lightgrey);
+    position: relative;
     
     /*grow-shrink-width*/
 }
@@ -157,12 +158,17 @@ p {
 
 }
 
+.mid-navbar{
+    color: var(--color-lightgrey);
+    padding-left: 10px;
+}
 
 
 #sidebar .logo img {
     width: 70%;
     padding-top: 20px;
 }
+
 
 .small-logo{
     display: none;
@@ -189,19 +195,19 @@ p {
 }
 
 
-
-
-  
-
 .upper-navbar{
     flex: 1 1 auto;
+}
+
+.upper-navbar li{
+    padding-left: 10px;
     
 }
 
 .lower-navbar{
     flex: 0 0 70px;
-
-    
+    position: absolute;
+    bottom: 0
 }
 
 .upper-navbar ul{
@@ -213,12 +219,57 @@ p {
 .download{
     padding-bottom: 10px;
     border-bottom: 2px solid var(--color-lightgrey);
+    padding-left: 10px;
 }
 
 .user{
     padding-top: 10px;
+    padding-left: 10px;
 }
 
+.square{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*footer*/
+
+.footer-left{
+    width: 25%;
+}
+
+.footer-left img{
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.footer-center{
+    flex-grow: 1;
+}
+
+.footer-right{
+    width: 25%;
+}
+
+.left-icons{
+    color: var(--color-lightgrey);
+    font-size: 1.2em;
+}
+
+.left-icons i{
+    padding: 5px;
+}
+
+.small-text{
+    padding-left: 5px;
+
+}
 
 
 
@@ -245,6 +296,10 @@ p {
 
 .wrap {
     flex-wrap: wrap;
+}
+
+.around{
+    justify-content: space-around;
 }
 
 /*debug*/
