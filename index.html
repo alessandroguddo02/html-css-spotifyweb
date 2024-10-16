@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
@@ -23,12 +23,14 @@
 
 
                 <!--logo spotify-->
-                <div class="logo d-flex j-center">
-                    <img src="./img/logo.svg" alt="logo-spotify">
+                <div class="logo d-flex">
+                    <img src="./img/logo.svg" alt="logo-spotify" class="big-logo">
+                    <img src="./img/logo-small.svg" alt="logo-small-spotify" class="small-logo">
                 </div>
 
                 <!--navbar-->
                 <div class="navbar a-center d-flex">
+                    
                     <ul>
                         <li>
                             <div class=""><img src="./img/home.svg" alt="home"></div>
@@ -45,12 +47,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="upper-navbar pl-35">
+
+
+
+                <div class="upper-navbar"> 
                     <h5>playlist</h5>
-                    <div class=" small-square">
-                        <div class="inner-plus"><i class="fa-solid fa-plus"></i> </div>  
-                    </div>
-                   
+                    
+
                     <ul>
                         <li>nome playlist</li>
                         <li>nome playlist</li>
@@ -58,12 +61,20 @@
                         <li>nome playlist</li>
                         <li>nome playlist</li>
                         <li>nome playlist</li>
-                        
                     </ul>
-
                 </div>
 
                 <div class=" debug lower-navbar">
+                    <div class="download">
+                        <i class="fa-regular fa-circle-down"></i>
+                        <span>download</span>
+                    </div>
+
+                    <div class="user">
+                        <i class="fa-regular fa-user"></i>
+                        <span>john dohe</span>
+
+                    </div>
 
                 </div>
             </div>

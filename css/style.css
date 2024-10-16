@@ -91,11 +91,13 @@ nav ul li {
 
 .row {
     margin: 20px 0px;
+    padding: 10px;
 
 }
 
 .col {
     width: calc(100% / 6);
+    padding: 5px;
 }
 
 .card {
@@ -139,17 +141,34 @@ p {
     display: flex;
     flex-direction: column;
     flex: 0 0 230px;
-    color: var(--color-light);
+    color: var(--color-lightgrey);
+    
     /*grow-shrink-width*/
 }
+#sidebar ul li{
+    border-left: 2px solid transparent;
+    cursor: pointer;
+}
+
+#sidebar ul li:hover{
+    color: var(--color-light);
+    border-left: 2px solid var(--color-highlight);
+    
+
+}
+
+
 
 #sidebar .logo img {
     width: 70%;
     padding-top: 20px;
 }
 
+.small-logo{
+    display: none;
+}
+
 .navbar ul{
-    padding-left: 35px;
     padding-top: 10px;
 }
 
@@ -166,34 +185,38 @@ p {
     width: 100%;
     display: flex;
     align-items: center;
+    padding-left: 10px;
 }
 
-.small-square{
-    height: 30px;
-    width: 30px;
-    background-color: var(--color-light);
-    position: relative;
-}
 
-.inner-plus{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: var(--color-black);
-   
-}
+
+
+  
 
 .upper-navbar{
     flex: 1 1 auto;
+    
 }
 
 .lower-navbar{
     flex: 0 0 70px;
+
+    
 }
 
 .upper-navbar ul{
     list-style: none;
     line-height: 1.7;
+    
+}
+
+.download{
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--color-lightgrey);
+}
+
+.user{
+    padding-top: 10px;
 }
 
 
@@ -233,6 +256,10 @@ p {
 /*space*/
 .pl-35{
     padding-left: 35px;
+}
+
+h5{
+    padding: 10px 0px;
 }
 
 
@@ -278,8 +305,36 @@ p {
     }
 
     #sidebar {
-        flex: 0 0 70px;
+        flex: 0 0 40px;
+        padding-left: 5px;
+        
 
+    }
+
+    .navbar ul span{
+        display: none;
+        padding: 10px;
+    }
+
+    .upper-navbar{
+        display: none;
+    }
+
+    
+
+    .lower-navbar span{
+        display: none;
+    }
+
+    .download{
+        border: none;
+    }
+    .big-logo{
+        display: none;
+    }
+
+    .small-logo{
+        display: block;
     }
 
 
