@@ -102,7 +102,27 @@ nav ul li {
 
 .card {
     width: 100%;
+    position: relative;
+}
 
+.layover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--color-light);
+    position: absolute;
+    font-size: 3em;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.card:hover .layover{
+    opacity: 1;
 }
 
 .card img {
@@ -154,24 +174,48 @@ p {
 #sidebar ul li:hover{
     color: var(--color-light);
     border-left: 2px solid var(--color-highlight);
-    
+}
+
+.download,
+.user{
+    border-left: 2px solid transparent;
+    cursor: pointer;
+    color: grey;
+}
+
+
+.download:hover{
+    color: var(--color-light);
+    border-left: 2px solid var(--color-highlight);
 
 }
+.user:hover{
+    color: var(--color-light);
+    border-left: 2px solid var(--color-highlight);
+
+}
+
 
 .mid-navbar{
     color: var(--color-lightgrey);
     padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 
 #sidebar .logo img {
     width: 70%;
     padding-top: 20px;
+    padding-left: 10px;
 }
 
 
 .small-logo{
     display: none;
+}
+
+.navbar{
+    flex: 1 1 auto;
 }
 
 .navbar ul{
@@ -195,9 +239,7 @@ p {
 }
 
 
-.upper-navbar{
-    flex: 1 1 auto;
-}
+
 
 .upper-navbar li{
     padding-left: 10px;
@@ -206,8 +248,6 @@ p {
 
 .lower-navbar{
     flex: 0 0 70px;
-    position: absolute;
-    bottom: 0
 }
 
 .upper-navbar ul{
@@ -230,7 +270,7 @@ p {
 .square{
     width: 30px;
     height: 30px;
-    background-color: white;
+    background-color: var(--color-lightgrey);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,8 +279,15 @@ p {
 
 /*footer*/
 
-.footer-left{
-    width: 25%;
+footer{
+    color: var(--color-light);
+}
+
+.footer-left,
+.footer-right{
+    width: 250px;
+    height: 100%;
+    
 }
 
 .footer-left img{
@@ -250,12 +297,10 @@ p {
 }
 
 .footer-center{
-    flex-grow: 1;
+    width: 40%;
+    height: 100%;
 }
 
-.footer-right{
-    width: 25%;
-}
 
 .left-icons{
     color: var(--color-lightgrey);
@@ -266,10 +311,42 @@ p {
     padding: 5px;
 }
 
-.small-text{
-    padding-left: 5px;
-
+.footer-center .select{
+    height: 60%;
 }
+
+
+.footer-center .play-bar{
+    height: 40%;
+}
+
+.select i{
+    font-size: 1.5em;
+    padding: 0px 10px;
+    color: var(--color-light);
+}
+
+.progress,
+.progress input{
+    width: 100%;
+}
+
+input[type=range]{
+    height: 5px;
+    
+}
+
+.time{
+    padding: 5px;
+}
+
+.right-icons i{
+    padding: 5px;
+}
+
+
+
+
 
 
 
@@ -300,6 +377,10 @@ p {
 
 .around{
     justify-content: space-around;
+}
+
+.between{
+    justify-content: space-between;
 }
 
 /*debug*/
@@ -361,9 +442,11 @@ h5{
 
     #sidebar {
         flex: 0 0 40px;
-        padding-left: 5px;
-        
+        justify-content: center;
+    }
 
+    .navbar li{
+        padding: 0px;
     }
 
     .navbar ul span{
@@ -375,21 +458,46 @@ h5{
         display: none;
     }
 
-    
-
     .lower-navbar span{
         display: none;
     }
 
-    .download{
+    /*.download{
         border: none;
+    }*/
+
+    .download,
+    .user{
+       padding-left: 0px;
+       display: flex;
+       justify-content: center;
     }
+
     .big-logo{
         display: none;
     }
 
+    #sidebar .logo img {
+        width: 100%;
+        padding: 10px 5px;
+        }
+
     .small-logo{
         display: block;
+    }
+
+    .footer-left,
+    .footer-right{
+        display: none;
+    }
+
+    .footer-center{
+        width: 100%;
+    }
+
+    footer{
+        position: relative;
+        z-index: 100;
     }
 
 
