@@ -149,6 +149,7 @@ nav ul li a {
 
 .under-image {
     text-align: center;
+    
 }
 
 p {
@@ -437,6 +438,10 @@ h5 {
 @media screen and (max-width: 1200px) {
     .main-content .col {
         width: calc(100% / 4);
+    }
+
+    #text-overflow{
+        display: none;
     }
 
 }
