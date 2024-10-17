@@ -12,11 +12,12 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif; 
+    font-size: 14px;
 }
 
 /*general*/
@@ -26,6 +27,7 @@ body {
     top: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
 }
 
 .header a {
@@ -39,6 +41,8 @@ body {
 
 .header a:hover {
     font-weight: bold;
+    box-shadow: 5px 5px 5px ;
+    transition: all 0.5s;
 }
 
 
@@ -60,11 +64,12 @@ footer {
     /*grow-shrink-height*/
 }
 
-
-
-
 nav ul {
     list-style: none;
+}
+
+h1{
+    padding: 20px;
 }
 
 /*main*/
@@ -78,21 +83,31 @@ main {
 nav ul li a {
     color: var(--color-light);
     text-decoration: none;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    display: block;
 }
 
-nav ul li a:hover {
-    border-bottom: 3px solid orangered;
-    font-weight: bold;
+.h-border li a{
+    border-bottom: 3px solid transparent;
 }
 
-nav ul li {
-    padding: 10px;
+.h-border li a:hover{
+    border-bottom: 3px solid var(--color-highlight);
+}
+
+.border{
+    border-bottom: 3px solid transparent;
+    width: 50px;
 }
 
 .row {
     margin: 20px 0px;
     padding: 10px;
+}
 
+.artist-name{
+    padding: 20px;
 }
 
 .col {
@@ -105,7 +120,7 @@ nav ul li {
     position: relative;
 }
 
-.layover{
+.layover {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,16 +136,15 @@ nav ul li {
     transition: all 0.5s;
 }
 
-.card:hover .layover{
+.card:hover .layover {
     opacity: 1;
 }
 
 .card img {
-
     width: 100%;
     object-fit: cover;
     display: block;
-
+    border-radius: 15px;
 }
 
 .under-image {
@@ -138,7 +152,6 @@ nav ul li {
 }
 
 p {
-
     color: grey
 }
 
@@ -147,13 +160,11 @@ p {
     top: 0;
     left: 0;
     display: none;
-
 }
 
 .box {
     border-radius: 50%;
     overflow: hidden;
-
 }
 
 #sidebar {
@@ -162,46 +173,47 @@ p {
     flex-direction: column;
     flex: 0 0 230px;
     color: var(--color-lightgrey);
-    position: relative;
-    
-    /*grow-shrink-width*/
 }
-#sidebar ul li{
+
+#sidebar ul li {
     border-left: 2px solid transparent;
     cursor: pointer;
 }
 
-#sidebar ul li:hover{
+#sidebar ul li:hover {
     color: var(--color-light);
     border-left: 2px solid var(--color-highlight);
 }
 
 .download,
-.user{
+.user {
     border-left: 2px solid transparent;
     cursor: pointer;
     color: grey;
 }
 
 
-.download:hover{
+.download:hover {
     color: var(--color-light);
     border-left: 2px solid var(--color-highlight);
-
 }
-.user:hover{
+
+.user:hover {
     color: var(--color-light);
     border-left: 2px solid var(--color-highlight);
-
 }
 
 
-.mid-navbar{
+.mid-navbar {
     color: var(--color-lightgrey);
     padding-left: 10px;
     padding-bottom: 10px;
 }
 
+.mid-navbar ul {
+    overflow-y: auto;
+    max-height: calc(100vh - 410px);
+}
 
 #sidebar .logo img {
     width: 70%;
@@ -210,144 +222,149 @@ p {
 }
 
 
-.small-logo{
+.small-logo {
     display: none;
 }
 
-.navbar{
+.navbar {
     flex: 1 1 auto;
 }
 
-.navbar ul{
+.navbar ul {
     padding-top: 10px;
 }
 
-.navbar img{
+.navbar img {
     width: 25px;
 }
 
-.navbar span{
+.navbar span {
     color: var(--color-light);
-    
 }
 
-.navbar li{
+.navbar li {
     width: 100%;
     display: flex;
     align-items: center;
     padding-left: 10px;
 }
 
-
-
-
-.upper-navbar li{
+.upper-navbar li {
     padding-left: 10px;
-    
 }
 
-.lower-navbar{
+.lower-navbar {
     flex: 0 0 70px;
 }
 
-.upper-navbar ul{
+.upper-navbar ul {
     list-style: none;
-    line-height: 1.7;
-    
+    line-height: 2;
 }
 
-.download{
+.download {
     padding-bottom: 10px;
     border-bottom: 2px solid var(--color-lightgrey);
     padding-left: 10px;
 }
 
-.user{
+.user {
     padding-top: 10px;
     padding-left: 10px;
 }
 
-.square{
+.square {
     width: 30px;
     height: 30px;
     background-color: var(--color-lightgrey);
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
+}
+
+.new{
+    padding-left: 5px;
+}
+
+.mid-navbar i{
+    color: var(--color-light);
 }
 
 
 /*footer*/
 
-footer{
+footer {
     color: var(--color-light);
 }
 
 .footer-left,
-.footer-right{
+.footer-right {
     width: 250px;
     height: 100%;
-    
 }
 
-.footer-left img{
-    width: 40px;
-    height: 40px;
+.footer-left img {
+    width: 50px;
+    height: 50px;
     display: block;
 }
 
-.footer-center{
+.footer-center {
     width: 40%;
     height: 100%;
 }
 
 
-.left-icons{
+.left-icons {
     color: var(--color-lightgrey);
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
-.left-icons i{
+.left-icons i {
     padding: 5px;
 }
 
-.footer-center .select{
+.small-text{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.footer-center .select {
     height: 60%;
 }
 
 
-.footer-center .play-bar{
+.footer-center .play-bar {
     height: 40%;
 }
 
-.select i{
+.select i {
     font-size: 1.5em;
-    padding: 0px 10px;
+    padding: 0px 20px;
     color: var(--color-light);
 }
 
 .progress,
-.progress input{
+.progress input {
     width: 100%;
 }
 
-input[type=range]{
+input[type=range] {
     height: 5px;
-    
+    accent-color: var(--color-lightgrey);
 }
 
-.time{
+.time {
     padding: 5px;
 }
 
-.right-icons i{
+.right-icons i {
     padding: 5px;
 }
-
-
-
-
-
 
 
 /*flex-utility*/
@@ -375,27 +392,30 @@ input[type=range]{
     flex-wrap: wrap;
 }
 
-.around{
+.around {
     justify-content: space-around;
 }
 
-.between{
+.between {
     justify-content: space-between;
 }
 
-/*debug*/
+/*debug
+
 .debug {
     border: 1px solid red;
-}
+}*/
 
 
 /*space*/
-.pl-35{
+.pl-35 {
     padding-left: 35px;
 }
 
-h5{
+h5 {
     padding: 10px 0px;
+    color: var(--color-light);
+    font-size: 1.3em;
 }
 
 
@@ -445,20 +465,25 @@ h5{
         justify-content: center;
     }
 
-    .navbar li{
+    .navbar{
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar li {
         padding: 0px;
     }
 
-    .navbar ul span{
+    .navbar ul span {
         display: none;
         padding: 10px;
     }
 
-    .upper-navbar{
+    .upper-navbar {
         display: none;
     }
 
-    .lower-navbar span{
+    .lower-navbar span {
         display: none;
     }
 
@@ -467,37 +492,37 @@ h5{
     }*/
 
     .download,
-    .user{
-       padding-left: 0px;
-       display: flex;
-       justify-content: center;
+    .user {
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
     }
 
-    .big-logo{
+    .big-logo {
         display: none;
     }
 
     #sidebar .logo img {
         width: 100%;
         padding: 10px 5px;
-        }
+    }
 
-    .small-logo{
+    .small-logo {
         display: block;
     }
 
     .footer-left,
-    .footer-right{
+    .footer-right {
         display: none;
     }
 
-    .footer-center{
+    .footer-center {
         width: 100%;
     }
 
-    footer{
+    footer {
         position: relative;
-        z-index: 100;
+        z-index: 1000;
     }
 
 
