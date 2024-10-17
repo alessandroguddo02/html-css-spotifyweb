@@ -366,6 +366,19 @@ input[type=range] {
     padding: 5px;
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+    }
+
+::-webkit-scrollbar-track {
+        background: var(--color-black)
+      }
+
+::-webkit-scrollbar-thumb {
+        background: var(--color-highlight);
+      }
+
+
 
 /*flex-utility*/
 .d-flex {
